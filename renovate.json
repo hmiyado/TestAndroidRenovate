@@ -1,3 +1,17 @@
 {
-  "$schema": "https://docs.renovatebot.com/renovate-schema.json"
+  "extends": [
+    "config:base",
+    ":timezone(Asia/Tokyo)",
+    "group:allNonMajor"
+  ],
+  "schedule": [
+    "after 13:00 before 18:00 every weekday"
+  ],
+  "labels": [
+    "renovate",
+    "library change"
+  ],
+  "ignoreDeps": [
+    "gradle"
+  ]
 }
